@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="zepto.min.js"></script>
+</head>
+<body>
+    <button id="btn">Click Here</button> <button id="btn2">Clear</button>
+    <div id="div1"></div>
+</body>
+
+
+<script>
+    $("#btn").click(function () {
+        $("#div1").prepend("this is test  " +Date()+ "<br />");
+    })
+    $("#btn2").click(function () {
+        $("#div1").html('');
+    });
+</script>
+
+</html>
